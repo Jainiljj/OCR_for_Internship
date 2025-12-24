@@ -26,21 +26,6 @@ This project is an automated document processing tool designed to extract struct
     python main.py
     ```
 
-## 🧠 Future Improvements: Generative AI & LLM Integration
-While the current Regex-based approach works well for standardized templates, it can be brittle when facing varying layouts. To improve accuracy and scalability, I propose the following Generative AI enhancements:
-
-### 1. Vision-LLM Pipeline (GPT-4o / LayoutLM)
-Instead of relying on rule-based parsing, we can utilize Multimodal LLMs that understand document layout (spatial awareness).
-* **Approach:** Pass the invoice image directly to a model like **GPT-4o** or fine-tune a **LayoutLMv3** model.
-* **Benefit:** These models can distinguish between a "Ship To" and "Bill To" address based on position, and correctly parse complex tables without explicit regex rules.
-
-### 2. Retrieval-Augmented Generation (RAG) for Context
-For processing valid vendor names or cross-referencing purchase orders:
-* **Approach:** Store valid vendor data in a vector database.
-* **Workflow:** When the OCR extracts a vendor name (e.g., "TechSol Inc"), the system queries the database to match it against the canonical name ("TechSolutions Inc.") before finalizing the JSON.
-
-### 3. Post-Processing Correction
-LLMs can be used to "clean" raw OCR text.
 * **Example:** Inputting the noisy OCR text `Description —SSSCS~S~S~S Sic]` into an LLM with the prompt *"Clean this table header"* would return the correct `Description | Qty | Unit Price | Total`.
 
 <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/fbc79977-9dd1-41ef-ab29-6fc10a37cb98" />
@@ -104,3 +89,20 @@ JSON Output:
 
 <img width="570" height="632" alt="image" src="https://github.com/user-attachments/assets/90d7f059-eef8-4ae0-a338-2f65c72ae70b" />
 
+
+
+## 🧠 Future Improvements: Generative AI & LLM Integration
+While the current Regex-based approach works well for standardized templates, it can be brittle when facing varying layouts. To improve accuracy and scalability, I propose the following Generative AI enhancements:
+
+### 1. Vision-LLM Pipeline (GPT-4o / LayoutLM)
+Instead of relying on rule-based parsing, we can utilize Multimodal LLMs that understand document layout (spatial awareness).
+* **Approach:** Pass the invoice image directly to a model like **GPT-4o** or fine-tune a **LayoutLMv3** model.
+* **Benefit:** These models can distinguish between a "Ship To" and "Bill To" address based on position, and correctly parse complex tables without explicit regex rules.
+
+### 2. Retrieval-Augmented Generation (RAG) for Context
+For processing valid vendor names or cross-referencing purchase orders:
+* **Approach:** Store valid vendor data in a vector database.
+* **Workflow:** When the OCR extracts a vendor name (e.g., "TechSol Inc"), the system queries the database to match it against the canonical name ("TechSolutions Inc.") before finalizing the JSON.
+
+### 3. Post-Processing Correction
+LLMs can be used to "clean" raw OCR text.
