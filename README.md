@@ -108,3 +108,9 @@ For processing valid vendor names or cross-referencing purchase orders:
 
 ### 3. Post-Processing Correction
 LLMs can be used to "clean" raw OCR text.
+
+## 🤝 Acknowledgements & Learning Process
+In the spirit of transparency and rapid learning, I utilized **Google Gemini** as a technical thought partner for this project.
+
+* **How I used it:** I used AI to help brainstorm the project structure, debug complex Regex patterns for the invoice parsing logic, and refine the documentation.
+* **Why:** As an aspiring engineer eager to learn modern workflows, I believe in leveraging Generative AI to accelerate development while ensuring I deeply understand every line of code I ship. This approach allowed me to focus on the core logic and deliver a robust solution within the timeline.
