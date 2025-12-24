@@ -49,7 +49,7 @@ LLMs can be used to "clean" raw OCR text.
 When running the script on the sample invoice, the system transforms the raw OCR text into structured JSON.
 
 Raw Text:
- TECHSOLUTIONS INC.
+TECHSOLUTIONS INC.
 123 Innovation Drive
 Tech City, TC 54321 , 2
 INVOICE
