@@ -47,7 +47,9 @@ LLMs can be used to "clean" raw OCR text.
 
 ### Output:
 Raw Text:
+
  TECHSOLUTIONS INC.
+ 
 123 Innovation Drive
 Tech City, TC 54321 , 2
 INVOICE
