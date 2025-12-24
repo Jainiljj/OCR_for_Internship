@@ -3,7 +3,9 @@
 ## Project Overview
 This project is an automated document processing tool designed to extract structured data from semi-structured documents (specifically invoices). It uses **Optical Character Recognition (OCR)** to convert image data into text and **Regex-based Natural Language Processing (NLP)** to identify key entities like dates, invoice numbers, and line items.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/138alu2u-ILo6TqokHQ2kxZk-8rPR5rLU?usp=sharing)
+<a href="https://colab.research.google.com/drive/138alu2u-ILo6TqokHQ2kxZk-8rPR5rLU?usp=sharing" target="_blank">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 ## Features
 * **Image Preprocessing:** Uses OpenCV to convert images to grayscale and apply thresholding for better OCR accuracy.
