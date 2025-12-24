@@ -67,6 +67,9 @@ Software Machinest Back $150.00 $600.00
 Subtotal: $3,000.00
 Tax (10%): $300.00
 Total Due: $3,300.00
+
+<img width="524" height="454" alt="image" src="https://github.com/user-attachments/assets/ea7ef155-6c0f-46e7-a851-c4eb8ebea0c9" />
+
 
 
 JSON Output:
@@ -98,3 +101,6 @@ JSON Output:
         }
     ]
 }
+
+<img width="570" height="632" alt="image" src="https://github.com/user-attachments/assets/90d7f059-eef8-4ae0-a338-2f65c72ae70b" />
+
