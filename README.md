@@ -42,3 +42,7 @@ For processing valid vendor names or cross-referencing purchase orders:
 ### 3. Post-Processing Correction
 LLMs can be used to "clean" raw OCR text.
 * **Example:** Inputting the noisy OCR text `Description —SSSCS~S~S~S Sic]` into an LLM with the prompt *"Clean this table header"* would return the correct `Description | Qty | Unit Price | Total`.
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/fbc79977-9dd1-41ef-ab29-6fc10a37cb98" />
+
+
