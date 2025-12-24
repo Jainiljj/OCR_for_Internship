@@ -49,35 +49,34 @@ LLMs can be used to "clean" raw OCR text.
 When running the script on the sample invoice, the system transforms the raw OCR text into structured JSON.
 
 Raw Text:
-
  TECHSOLUTIONS INC.
- 123 Innovation Drive 
- Tech City, TC 54321 , 2
- INVOICE
- Date: 2025-10-27
- Invoice #: INV-2025-0001
- Bill To:
- Acme Corp
- 456 Corporate Blvd
- Business Town, BT 98765
- Description —SSSCS~S~S~S Sic]
- IT Consulting Services $150.00 $1,500.00
- Software License - Pro $300.00 $1,500.00
- Software Securie System $300.00 $1,000.00
- Software Machinest Back $150.00 $600.00
- Subtotal: $3,000.00
- Tax (10%): $300.00
- Total Due: $3,300.00
+123 Innovation Drive
+Tech City, TC 54321 , 2
+INVOICE
+Date: 2025-10-27
+Invoice #: INV-2025-0001
+Bill To:
+Acme Corp
+456 Corporate Blvd
+Business Town, BT 98765
+Description —SSSCS~S~S~S Sic]
+IT Consulting Services $150.00 $1,500.00
+Software License - Pro $300.00 $1,500.00
+Software Securie System $300.00 $1,000.00
+Software Machinest Back $150.00 $600.00
+Subtotal: $3,000.00
+Tax (10%): $300.00
+Total Due: $3,300.00
 
 
- JSON Output:
- {
-     "date": "2025-10-27",
-     "invoice_number": "INV-2025-0001",
-     "total_amount": 3300.0,
-     "vendor_name": "TECHSOLUTIONS INC.",
-     "line_items": [
-         {
+JSON Output:
+{
+    "date": "2025-10-27",
+    "invoice_number": "INV-2025-0001",
+    "total_amount": 3300.0,
+    "vendor_name": "TECHSOLUTIONS INC.",
+    "line_items": [
+        {
             "description": "IT Consulting Services",
             "unit_price": 150.0,
             "line_total": 1500.0
